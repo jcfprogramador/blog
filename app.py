@@ -60,20 +60,3 @@ def populate():
     db.session.add(post2)
     db.session.commit()
     return redirect(url_for('index'))
-'''
-posts = [
-    {
-        "title": "Meu primeiro post",
-        "body": "Eu escrevi este post para testar a pagina no flask",
-        "description": "teste post flask",
-        "author": "Julio C. Franco",
-        "created": datetime(2002,7,25)
-    },
-    {
-        "title": "O meu Segundo Post",
-        "body": "Teste do Segundo Post",
-        "author": "Julio C. Franco",
-        "created": datetime(2022,7,26)
-    },
-]
-'''
