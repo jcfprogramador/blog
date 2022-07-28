@@ -1,14 +1,18 @@
 <html>
+    
     <head>
-        <title> Meu Blog </title>
+        <title> {% block title %}{% endblock %} - Meu Blog </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
     </head>
-    <link rel="stylesheet" type="text/css" href="/static/style.css"
+
     <body>
         <h1> Meu Blog </h1>
-        <nav></nav>
+        <nav>
+        </nav>
         <section class="content">
-        {% block content %}
-        {% endblock %}
+            {% block content %}
+            {% endblock %}
         </section>
     </body>
+
 </html>
